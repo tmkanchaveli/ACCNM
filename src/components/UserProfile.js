@@ -37,34 +37,38 @@ const UserProfile = () => {
         </div>
       </div>
       <div className="user-profile-content">
-        {activeTab === "overview" && (
-          <div className="user-profile-overview">
-            <h2>Overview</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
-              turpis porta, molestie mi vel, vehicula nisl. Vestibulum vel augue
-              id ipsum sodales gravida. Curabitur rhoncus, lacus vel lacinia
-              ultrices, sapien metus malesuada velit, nec rutrum tortor tellus
-              eu arcu. Fusce quis eros ac ante sodales ultrices. Sed et lacus
-              vestibulum, semper arcu eu, ultrices massa. Duis suscipit eget
-              lorem non bibendum. Vestibulum id quam nunc.
-            </p>
-          </div>
-        )}
-        {activeTab === "apartment" && (
-          <div className="user-profile-apartment">
-            <h2>My Apartment</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
-              turpis porta, molestie mi vel, vehicula nisl. Vestibulum vel augue
-              id ipsum sodales gravida. Curabitur rhoncus, lacus vel lacinia
-              ultrices, sapien metus malesuada velit, nec rutrum tortor tellus
-              eu arcu. Fusce quis eros ac ante sodales ultrices. Sed et lacus
-              vestibulum, semper arcu eu, ultrices massa. Duis suscipit eget
-              lorem non bibendum. Vestibulum id quam nunc.
-            </p>
-          </div>
-        )}
+        <div
+          className={`user-profile-overview ${
+            activeTab === "overview" ? "active" : ""
+          }`}
+        >
+          <h2>Overview</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+            turpis porta, molestie mi vel, vehicula nisl. Vestibulum vel augue
+            id ipsum sodales gravida. Curabitur rhoncus, lacus vel lacinia
+            ultrices, sapien metus malesuada velit, nec rutrum tortor tellus
+            eu arcu. Fusce quis eros ac ante sodales ultrices. Sed et lacus
+            vestibulum, semper arcu eu, ultrices massa. Duis suscipit eget
+            lorem non bibendum. Vestibulum id quam nunc.
+          </p>
+        </div>
+        <div
+          className={`user-profile-apartment ${
+            activeTab === "apartment" ? "active" : ""
+          }`}
+        >
+          <h2>My Apartment</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+            turpis porta, molestie mi vel, vehicula nisl. Vestibulum vel augue
+            id ipsum sodales gravida. Curabitur rhoncus, lacus vel lacinia
+            ultrices, sapien metus malesuada velit, nec rutrum tortor tellus
+            eu arcu. Fusce quis eros ac ante sodales ultrices. Sed et lacus
+            vestibulum, semper arcu eu, ultrices massa. Duis suscipit eget
+            lorem non bibendum. Vestibulum id quam nunc.
+          </p>
+        </div>
       </div>
     </div>
   );
