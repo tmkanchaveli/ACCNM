@@ -9,11 +9,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .user-profile-avatar {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -26,4 +30,67 @@
 
 .user-profile-tab {
   padding: 10px;
-  border: 1px solid #ccc
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-tab.active {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.user-profile-content {
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.user-profile-overview,
+.user-profile-apartment {
+  display: none;
+}
+
+.user-profile-overview.active,
+.user-profile-apartment.active {
+  display: block;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .user-profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-profile-header h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .user-profile-tabs {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .user-profile-tab {
+    flex: 0 0 48%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .user-profile-content {
+    padding: 15px;
+  }
+}
