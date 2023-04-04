@@ -1,0 +1,56 @@
+/* ... existing styles ... */
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* Media query for tablet devices */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 10px;
+  }
+
+  .about-container h1 {
+    font-size: 36px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .about-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-container p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 5px;
+  }
+
+  .about-container h1 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .about-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-container p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,50 @@
+.community-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.community-wall {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.community-sidebar {
+  width: 25%;
+}
+
+/* Tablet screen and smaller */
+@media screen and (max-width: 768px) {
+  .community-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community-wall {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .community-sidebar {
+    width: 100%;
+  }
+}
+
+/* Mobile screen and smaller */
+@media screen and (max-width: 480px) {
+  .community-container {
+    padding: 10px;
+  }
+
+  .community-wall {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .community-sidebar {
+    width: 100%;
+  }
+}

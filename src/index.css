@@ -1,0 +1,47 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family and basic font styles */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Set some basic styling for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Style links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Add some spacing for containers and sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 30px 0;
+}
