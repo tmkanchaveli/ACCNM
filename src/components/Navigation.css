@@ -1,10 +1,7 @@
 .navbar {
   background-color: #15202b;
-  height: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -12,10 +9,10 @@
 
 .navbar-nav {
   display: flex;
-  align-items: center;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .nav-item {
@@ -37,23 +34,29 @@
 
 /* Media query for tablet devices */
 @media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-    width: 100%;
-  }
-
   .nav-item {
-    margin: 10px 5px;
+    margin-right: 5px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 7px;
   }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    margin-right: 3px;
+    margin-bottom: 3px;
+  }
+
   .nav-link {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 5px;
   }
 }
