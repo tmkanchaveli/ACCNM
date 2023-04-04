@@ -125,3 +125,29 @@ button:hover {
   font-size: 18px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .features-section h2 {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    width: calc(100% - 20px);
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+}
