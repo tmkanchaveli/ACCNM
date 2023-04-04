@@ -34,3 +34,26 @@
 .nav-link:hover {
   background-color: #1da1f2;
 }
+
+/* Media query for tablet devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 5px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
